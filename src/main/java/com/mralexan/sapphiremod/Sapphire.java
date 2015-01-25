@@ -42,7 +42,7 @@ public class Sapphire
     public static final String MODA = "mralexan";
     public static final String VERSION = "1.0";
     
-    @SidedProxy(clientSide="com.mralexan.sapphiremod.ClientProxy", serverSide="com.mralexan.sapphiremod.ServerProxy")
+    @SidedProxy(clientSide="com.mralexan.sapphiremod.ClientProxy", serverSide="com.mralexan.sapphiremod.CommonProxy")
     public static CommonProxy proxy;
     
     //Sapphire materials :
@@ -52,6 +52,16 @@ public class Sapphire
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
-    	this.proxy.preInit(event);
+    	proxy.preInit(event);
+    	System.out.println("[SAPPHIREMOD] Side : " + event.getSide().toString());
+    	/////////////////////////////////////
+    	// Block and items initializations //
+    	/////////////////////////////////////
+    	SapphireInitializers.initialize();  
+    	
+		///////////////////
+		// Game registry //
+		///////////////////
+		GameRegister.register();
     }
 }
