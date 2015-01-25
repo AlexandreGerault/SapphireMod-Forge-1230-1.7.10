@@ -1,0 +1,16 @@
+[
+{
+"modid": "sapphiremod",
+"name": "Sapphire Mod",
+"description": "Add sapphire item, tools, swords and block.",
+"version": "${version}",
+"mcversion": "${mcversion}",
+"url": "",
+"updateUrl": "",
+"authors": ["MrAlexan14"],
+"credits": "The Forge and FML guys, for making this API",
+"logoFile": "",
+"screenshots": [],
+"dependencies": []
+}
+]

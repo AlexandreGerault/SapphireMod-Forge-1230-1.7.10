@@ -1,0 +1,15 @@
+package com.mralexan.sapphiremod.items;
+
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
+
+public class SapphireItem extends Item
+{
+	public SapphireItem()
+	{
+		super();
+		
+		this.setCreativeTab(CreativeTabs.tabMaterials);
+		this.setMaxStackSize(64);
+	}
+}

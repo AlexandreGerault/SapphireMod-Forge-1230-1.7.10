@@ -1,0 +1,24 @@
+package com.mralexan.sapphiremod.blocks;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
+
+public class SapphireBlock extends Block
+{
+
+	public SapphireBlock(Material material, String name, float hardness)
+	{
+		super(material);
+		// TODO Auto-generated constructor stub
+		this.setCreativeTab(CreativeTabs.tabBlock);
+		this.setBlockName(name);
+		this.setHardness(hardness);
+	}
+	
+	public void init(String blockName, float hardness)
+	{
+		
+	}
+
+}

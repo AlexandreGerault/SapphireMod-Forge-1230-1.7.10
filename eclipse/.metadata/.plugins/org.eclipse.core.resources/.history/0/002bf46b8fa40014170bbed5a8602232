@@ -1,0 +1,11 @@
+package com.mralexan.sapphiremod.registers;
+
+public class GameRegister
+{
+	public static void register()
+	{
+		BlocksRegister.registerBlocks();
+		ItemsRegister.registerItems();
+		RecipesRegister.registerRecipes();
+	}
+}
