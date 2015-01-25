@@ -1,0 +1,16 @@
+[
+{
+  "modid": "SapphireMod",
+  "name": "Sapphire",
+  "description": "Add some sapphire stuuf.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["MrAlexan14"],
+  "credits": "The Forge and FML guys, for making this API",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

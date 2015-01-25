@@ -1,0 +1,19 @@
+package com.mralexan.sapphiremod.blocks;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+
+public class SapphireOre extends Block
+{
+	public String name;
+	public float hardness;
+	
+	protected SapphireOre(Material material, String p_name, float p_hardness)
+	{
+		super(material);
+		
+		name = p_name;
+		hardness = p_hardness;
+	}
+
+}

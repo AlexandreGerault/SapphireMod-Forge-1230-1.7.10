@@ -1,0 +1,17 @@
+package com.mralexan.sapphiremod.registers;
+
+import com.mralexan.sapphiremod.Sapphire;
+
+import net.minecraft.item.ItemStack;
+import cpw.mods.fml.common.registry.GameRegistry;
+
+public class RecipesRegister
+{
+	public static void registerRecipes()
+	{
+		ItemStack sapphire9 = new ItemStack(Sapphire.sapphireItem, 9);
+		ItemStack sapphireBlock = new ItemStack(Sapphire.sapphireBlock);
+		
+		GameRegistry.addShapelessRecipe(sapphire9, sapphireBlock);	
+	}
+}

@@ -1,0 +1,77 @@
+package com.mralexan.sapphiremod.registers;
+
+import com.mralexan.sapphiremod.Sapphire;
+import com.mralexan.sapphiremod.initializers.SapphireBlocks;
+import com.mralexan.sapphiremod.initializers.SapphireItems;
+
+import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
+import net.minecraft.item.ItemStack;
+import cpw.mods.fml.common.registry.GameRegistry;
+
+public class RecipesRegister
+{
+	public static void registerRecipes()
+	{
+		// Get sapphire from block //
+		GameRegistry.addShapelessRecipe(new ItemStack(SapphireItems.sapphireItem, 9), new ItemStack(SapphireBlocks.sapphireBlock));	
+	
+		// Craft sapphire items from sapphire //
+		
+		GameRegistry.addShapedRecipe(new ItemStack(SapphireItems.sapphireSword, 1), new Object[]{
+    		"A",
+    		"A",
+    		"B",
+    		'A', SapphireItems.sapphireItem, 'B', Items.stick
+    	}); //Sword recipe
+		
+		GameRegistry.addShapedRecipe(new ItemStack(SapphireItems.sapphireAxe, 1), new Object[]{
+    		"AA ",
+    		"AB ",
+    		" B ",
+    		'A', SapphireItems.sapphireItem, 'B', Items.stick
+    	}); //Axe recipe
+		
+		GameRegistry.addShapedRecipe(new ItemStack(SapphireItems.sapphireAxe, 1), new Object[]{
+    		" AA",
+    		" BA",
+    		" B ",
+    		'A', SapphireItems.sapphireItem, 'B', Items.stick
+    	}); //Second axe recipe
+		
+		GameRegistry.addShapedRecipe(new ItemStack(SapphireItems.sapphirePickaxe, 1), new Object[]{
+    		"AAA",
+    		" B ",
+    		" B ",
+    		'A', SapphireItems.sapphireItem, 'B', Items.stick
+    	}); //Pick axe recipe
+		
+		GameRegistry.addShapedRecipe(new ItemStack(SapphireItems.sapphireShovel, 1), new Object[]{
+    		" A ",
+    		" B ",
+    		" B ",
+    		'A', SapphireItems.sapphireItem, 'B', Items.stick
+    	}); //Shovel recipe
+		
+		GameRegistry.addShapedRecipe(new ItemStack(SapphireItems.sapphireHoe, 1), new Object[]{
+    		"AA ",
+    		" B ",
+    		" B ",
+    		'A', SapphireItems.sapphireItem, 'B', Items.stick
+    	}); //Hoe recipe
+		
+		GameRegistry.addShapedRecipe(new ItemStack(SapphireItems.sapphireHoe, 1), new Object[]{
+    		" AA",
+    		" B ",
+    		" B ",
+    		'A', SapphireItems.sapphireItem, 'B', Items.stick
+    	}); //Second hoe recipe
+		
+		GameRegistry.addShapedRecipe(new ItemStack(SapphireBlocks.sapphireBlock, 1), new Object[]{
+    		"AAA",
+    		"AAA",
+    		"AAA",
+    		'A', SapphireItems.sapphireItem
+    	}); //Block recipe
+	}
+}

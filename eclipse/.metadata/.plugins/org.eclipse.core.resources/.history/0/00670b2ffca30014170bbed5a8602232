@@ -1,0 +1,59 @@
+package com.mralexan.sapphiremod.items;
+import com.mralexan.sapphiremod.Sapphire;
+
+import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.enchantment.EnchantmentHelper;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Items;
+import net.minecraft.item.ItemArmor;
+import net.minecraft.item.ItemStack;
+import net.minecraft.potion.Potion;
+import net.minecraft.potion.PotionEffect;
+import net.minecraft.world.World;
+
+public class SapphireArmor extends ItemArmor
+{
+
+	public SapphireArmor(ArmorMaterial material, int renderIndex, int armourType)
+	{
+		super(material, renderIndex, armourType);
+	}
+	
+	public String getArmourTexture(ItemStack stack)
+	{
+		if(stack.getItem().equals(Sapphire.helmetSapphire) || stack.getItem().equals(Sapphire.chestplateSapphire) || stack.getItem().equals(Sapphire.bootsSapphire))
+			return Sapphire.MODA+":textures/models/armor/sapphire_layer_1.png";
+		else if(stack.getItem().equals(Sapphire.helmetSapphire) || stack.getItem().equals(Sapphire.chestplateSapphire) || stack.getItem().equals(Sapphire.bootsSapphire))
+			return Sapphire.MODA+":textures/models/armor/sapphire_layer_2.png";
+		else
+			return null;
+	}
+	
+	@Override
+	public void registerIcons(IIconRegister reg)
+	{
+		if(this == Sapphire.helmetSapphire)
+			this.itemIcon = reg.registerIcon(Sapphire.MODA+":helmetSapphire");
+		if(this == Sapphire.chestplateSapphire)
+			this.itemIcon = reg.registerIcon(Sapphire.MODA+":chestplateSapphire");
+		if(this == Sapphire.legsSapphire)
+			this.itemIcon = reg.registerIcon(Sapphire.MODA+":legsSapphire");
+		if(this == Sapphire.bootsSapphire)
+			this.itemIcon = reg.registerIcon(Sapphire.MODA+":bootsSapphire");
+	}
+	
+	/*@Override
+	public void onArmorTick(World world, EntityPlayer player, ItemStack stack)
+	{
+		if(stack.getItem() == Sapphire.bootsSapphire)
+		{
+			int j = EnchantmentHelper.getEnchantmentLevel(mainRegistry.speedBoost.effectId, stack);
+			if(j > 0)
+			{
+				player.addPotionEffect(new PotionEffect(Potion.moveSpeed.getId(), 50, j - 1));
+			}
+		}
+	}*/
+	
+}

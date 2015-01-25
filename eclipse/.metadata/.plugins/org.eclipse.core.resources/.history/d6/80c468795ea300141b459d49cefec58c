@@ -1,0 +1,12 @@
+package com.mralexan.sapphiremod.items;
+
+import net.minecraft.item.ItemSword;
+
+public class SapphireSword extends ItemSword
+{
+	
+	public SapphireSword(ToolMaterial toolMaterial)
+	{
+		super(toolMaterial);
+	}
+}

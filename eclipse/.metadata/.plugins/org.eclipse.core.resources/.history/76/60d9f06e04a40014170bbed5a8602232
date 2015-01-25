@@ -1,0 +1,25 @@
+package com.mralexan.sapphiremod;
+
+import com.mralexan.sapphiremod.Sapphire;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+
+public class ItemsRegister
+{
+	public static void registerItems()
+	{
+    	GameRegistry.registerItem(Sapphire.sapphireItem, "sapphireItem");
+    	
+    	// Sapphire Tools
+    	GameRegistry.registerItem(Sapphire.sapphireSword, "sapphireSword");
+    	GameRegistry.registerItem(Sapphire.sapphireAxe, "sapphireAxe");
+    	GameRegistry.registerItem(Sapphire.sapphirePickaxe, "sapphirePickaxe");
+    	GameRegistry.registerItem(Sapphire.sapphireShovel, "sapphireShovel");
+    	GameRegistry.registerItem(Sapphire.sapphireHoe, "sapphireHoe");
+    	// Sapphire armor
+    	GameRegistry.registerItem(Sapphire.helmetSapphire, "helmetSapphire");
+    	GameRegistry.registerItem(Sapphire.chestplateSapphire, "chestplateSapphire");
+    	GameRegistry.registerItem(Sapphire.legsSapphire, "legsSapphire");
+    	GameRegistry.registerItem(Sapphire.bootsSapphire, "bootsSapphire");
+	}
+}

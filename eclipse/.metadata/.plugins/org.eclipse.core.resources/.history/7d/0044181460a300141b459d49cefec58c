@@ -1,0 +1,15 @@
+package com.mralexan.sapphiremod.items;
+
+import net.minecraft.item.ItemAxe;
+
+public class SapphireAxe extends ItemAxe
+{
+	public String name;
+	
+	protected SapphireAxe(ToolMaterial material)
+	{
+		super(material);
+		// TODO Auto-generated constructor stub
+	}
+
+}

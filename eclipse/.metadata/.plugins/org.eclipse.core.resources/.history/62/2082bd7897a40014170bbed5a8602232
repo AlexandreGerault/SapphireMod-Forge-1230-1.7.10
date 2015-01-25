@@ -1,0 +1,21 @@
+package com.mralexan.sapphiremod.registers;
+
+import com.mralexan.sapphiremod.Sapphire;
+import com.mralexan.sapphiremod.initializers.SapphireBlocks;
+import com.mralexan.sapphiremod.initializers.SapphireItems;
+
+import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.oredict.ShapedOreRecipe;
+import cpw.mods.fml.common.registry.GameRegistry;
+
+public class RecipesRegister
+{
+	public static void registerRecipes()
+	{
+		GameRegistry.addRecipe(new ShapedOreRecipe(Items.bucket, true, new Object[]{
+                "FF", SapphireItems.sapphireItem}));
+	}
+}

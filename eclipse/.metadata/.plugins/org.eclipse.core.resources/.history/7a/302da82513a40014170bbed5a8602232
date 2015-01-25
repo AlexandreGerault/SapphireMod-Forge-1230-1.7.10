@@ -1,0 +1,16 @@
+package com.mralexan.sapphiremod.items;
+
+import com.mralexan.sapphiremod.Sapphire;
+
+public class SapphireItems
+{
+	public static void initializeItems()
+	{
+		Sapphire.sapphireItem = new SapphireItem("sapphireItem");
+		Sapphire.sapphireSword = new SapphireSword("sapphireSword", Sapphire.SAPPHIRE);
+		Sapphire.sapphireAxe = new SapphireAxe("sapphireAxe", Sapphire.SAPPHIRE);
+		Sapphire.sapphirePickaxe = new SapphirePickaxe("sapphirePickaxe", Sapphire.SAPPHIRE);
+		Sapphire.sapphireShovel = new SapphireShovel("sapphireShovel", Sapphire.SAPPHIRE);
+		Sapphire.sapphireHoe = new SapphireHoe("sapphireHoe", Sapphire.SAPPHIRE);
+	}
+}

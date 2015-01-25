@@ -1,0 +1,12 @@
+package com.mralexan.sapphiremod;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+
+public class BlocksRegister
+{
+	public static void registerBlocks()
+	{
+    	GameRegistry.registerBlock(Sapphire.sapphireBlock, "sapphireBlock");
+    	GameRegistry.registerBlock(SapphiresapphireOre, "sapphireOre");
+	}
+}

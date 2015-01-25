@@ -1,0 +1,33 @@
+[15:17:30] [main/INFO]: Setting user: Player406
+[15:17:31] [Client thread/INFO]: LWJGL Version: 2.9.1
+[15:17:35] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Sapphire Mod
+[15:17:36] [Sound Library Loader/INFO]: Sound engine started
+[15:17:37] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[15:17:38] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[15:17:38] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Sapphire Mod
+[15:17:38] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[15:17:38] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[15:17:39] [Sound Library Loader/INFO]: Sound engine started
+[15:18:31] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[15:18:31] [Server thread/INFO]: Generating keypair
+[15:18:31] [Server thread/INFO]: Preparing start region for level 0
+[15:18:32] [Server thread/INFO]: Changing view distance to 12, from 10
+[15:18:33] [Server thread/INFO]: Player406[local:E:0a787a6a] logged in with entity id 279 at (235.30000001192093, 68.0, 255.31078564785082)
+[15:18:33] [Server thread/INFO]: Player406 a rejoint la partie
+[15:18:43] [Server thread/INFO]: Player406 vient d'obtenir le succès [Faire l'inventaire]
+[15:18:43] [Client thread/INFO]: [CHAT] Player406 vient d'obtenir le succès [Faire l'inventaire]
+[15:18:47] [Client thread/INFO]: [CHAT] Votre mode de jeu a été mis à jour
+[15:18:47] [Server thread/INFO]: [Player406 : Changement de votre propre mode de jeu en Mode Créatif]
+[15:19:04] [Server thread/INFO]: [Player406 : Changement de votre propre mode de jeu en Mode Survie]
+[15:19:04] [Client thread/INFO]: [CHAT] Votre mode de jeu a été mis à jour
+[15:19:18] [Server thread/INFO]: Saving and pausing game...
+[15:19:18] [Server thread/INFO]: Saving chunks for level 'Copie de Nouveau monde'/Overworld
+[15:19:18] [Server thread/INFO]: Saving chunks for level 'Copie de Nouveau monde'/Nether
+[15:19:18] [Server thread/INFO]: Saving chunks for level 'Copie de Nouveau monde'/The End
+[15:19:19] [Server thread/INFO]: Stopping server
+[15:19:19] [Server thread/INFO]: Saving players
+[15:19:19] [Server thread/INFO]: Saving worlds
+[15:19:19] [Server thread/INFO]: Saving chunks for level 'Copie de Nouveau monde'/Overworld
+[15:19:19] [Server thread/INFO]: Saving chunks for level 'Copie de Nouveau monde'/Nether
+[15:19:19] [Server thread/INFO]: Saving chunks for level 'Copie de Nouveau monde'/The End
+[15:19:20] [Client thread/INFO]: Stopping!

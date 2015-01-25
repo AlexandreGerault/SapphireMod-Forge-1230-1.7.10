@@ -1,0 +1,11 @@
+package com.mralexan.sapphiremod.items;
+
+import net.minecraft.item.Item;
+
+public class SapphireItem extends Item
+{
+	public SapphireItem(Material p_material)
+	{
+		
+	}
+}

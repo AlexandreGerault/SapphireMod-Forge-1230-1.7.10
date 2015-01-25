@@ -1,0 +1,5 @@
+package com.mralexan.sapphiremod.generators;
+
+public class SapphireWorldGenerator {
+
+}

@@ -1,0 +1,14 @@
+tile.sapphireBlock.name=Bloc de sapphire
+tile.sapphireOre.name=Minerai de sapphire
+
+item.sapphireItem.name=Sapphire
+item.sapphireSword.name=Épée de sapphire
+item.sapphireAxe.name=Hache de sapphire
+item.sapphirePickaxe.name=Pioche de sapphire
+item.sapphireShovel.name=Pelle de sapphire
+item.sapphireHoe.name=Faux de sapphire
+
+item.helmetSapphire.name=Casque en sapphire
+item.chestplateSapphire.name=Plastron en sapphire
+item.legsSapphire.name=Jambière en sapphire
+item.bootsSapphire.name=Bottes en sapphire

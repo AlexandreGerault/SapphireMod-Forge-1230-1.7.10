@@ -1,0 +1,12 @@
+package com.mralexan.sapphiremod;
+
+import net.minecraft.item.ItemStack;
+import cpw.mods.fml.common.registry.GameRegistry;
+
+public class RecipesRegister
+{
+	public void register()
+	{
+		ItemStack sapphire = new ItemStack();
+	}
+}

@@ -1,0 +1,56 @@
+package com.mralexan.sapphiremod.items;
+import com.mralexan.sapphiremod.Sapphire;
+
+import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.enchantment.EnchantmentHelper;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Items;
+import net.minecraft.item.ItemArmor;
+import net.minecraft.item.ItemStack;
+import net.minecraft.potion.Potion;
+import net.minecraft.potion.PotionEffect;
+import net.minecraft.world.World;
+
+public class SapphireArmor extends ItemArmor
+{
+	public String name;
+	 private String [] armourTypes = new String [] {"helmetSapphire", "chestplateSapphire", "legsSapphire", "bootsSapphire"};
+	
+	public SapphireArmor(ArmorMaterial material, int renderIndex, int armourType, String p_name)
+	{
+		super(material, renderIndex, armourType);
+		name = p_name;
+		this.setUnlocalizedName(name);
+	}
+	
+	public String getArmourTexture(ItemStack stack, Entity entity, int slot, String layer)
+	{
+		if(stack.getItem().equals(Sapphire.helmetSapphire) || stack.getItem().equals(Sapphire.chestplateSapphire) || stack.getItem().equals(Sapphire.bootsSapphire))
+			return "mralexan:textures/armor/sapphire_1.png";
+		else if(stack.getItem().equals(Sapphire.helmetSapphire) || stack.getItem().equals(Sapphire.chestplateSapphire) || stack.getItem().equals(Sapphire.bootsSapphire))
+			return "mralexan:textures/armor/sapphire_2.png";
+		else
+			return null;
+	}
+	
+	@Override
+	public void registerIcons(IIconRegister reg)
+	{
+		this.itemIcon = reg.registerIcon(Sapphire.MODA+":"+name);
+	}
+	
+	/*@Override
+	public void onArmorTick(World world, EntityPlayer player, ItemStack stack)
+	{
+		if(stack.getItem() == Sapphire.bootsSapphire)
+		{
+			int j = EnchantmentHelper.getEnchantmentLevel(mainRegistry.speedBoost.effectId, stack);
+			if(j > 0)
+			{
+				player.addPotionEffect(new PotionEffect(Potion.moveSpeed.getId(), 50, j - 1));
+			}
+		}
+	}*/
+	
+}
