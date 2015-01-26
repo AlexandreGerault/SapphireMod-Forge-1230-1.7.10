@@ -1,6 +1,9 @@
 package com.mralexan.sapphiremod.items
 
-class ItemSceptre
+class ItemSceptre extends Item
 {
-  
+	public ItemSceptre()
+	{
+		
+	}
 }
