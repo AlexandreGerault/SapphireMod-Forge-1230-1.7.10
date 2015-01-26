@@ -2,7 +2,9 @@ package com.mralexan.sapphiremod.items;
 import com.mralexan.sapphiremod.Sapphire;
 import com.mralexan.sapphiremod.initializers.SapphireItems;
 
+import cpw.mods.fml.client.config.GuiConfigEntries.ChatColorEntry;
 import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
@@ -11,6 +13,8 @@ import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
+import net.minecraft.util.ChatComponentTranslation;
+import net.minecraft.util.IChatComponent;
 import net.minecraft.world.World;
 
 public class SapphireArmor extends ItemArmor
@@ -40,18 +44,5 @@ public class SapphireArmor extends ItemArmor
 	{
 		this.itemIcon = register.registerIcon(Sapphire.MODA+":"+name);
 	}
-	
-	/*@Override
-	public void onArmorTick(World world, EntityPlayer player, ItemStack stack)
-	{
-		if(stack.getItem() == Sapphire.bootsSapphire)
-		{
-			int j = EnchantmentHelper.getEnchantmentLevel(mainRegistry.speedBoost.effectId, stack);
-			if(j > 0)
-			{
-				player.addPotionEffect(new PotionEffect(Potion.moveSpeed.getId(), 50, j - 1));
-			}
-		}
-	}*/
 	
 }

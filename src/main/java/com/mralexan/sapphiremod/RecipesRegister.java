@@ -1,6 +1,5 @@
-package com.mralexan.sapphiremod.registers;
+package com.mralexan.sapphiremod;
 
-import com.mralexan.sapphiremod.Sapphire;
 import com.mralexan.sapphiremod.initializers.SapphireBlocks;
 import com.mralexan.sapphiremod.initializers.SapphireItems;
 

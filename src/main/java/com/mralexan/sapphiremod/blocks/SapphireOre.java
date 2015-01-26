@@ -19,7 +19,6 @@ public class SapphireOre extends Block
 {
 	public String name;
 	public float hardness;
-	public Random rand;
 	
 	public SapphireOre(Material material, String p_name, float p_hardness)
 	{

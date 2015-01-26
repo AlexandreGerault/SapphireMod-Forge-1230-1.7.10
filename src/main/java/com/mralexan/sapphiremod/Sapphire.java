@@ -3,8 +3,8 @@ package com.mralexan.sapphiremod;
 import com.mralexan.sapphiremod.blocks.SapphireBlock;
 import com.mralexan.sapphiremod.blocks.SapphireOre;
 import com.mralexan.sapphiremod.initializers.SapphireBlocks;
-import com.mralexan.sapphiremod.initializers.SapphireInitializers;
 import com.mralexan.sapphiremod.initializers.SapphireItems;
+import com.mralexan.sapphiremod.initializers.SapphireMainRegister;
 import com.mralexan.sapphiremod.items.SapphireArmor;
 import com.mralexan.sapphiremod.items.SapphireAxe;
 import com.mralexan.sapphiremod.items.SapphireHoe;
@@ -12,10 +12,7 @@ import com.mralexan.sapphiremod.items.SapphireItem;
 import com.mralexan.sapphiremod.items.SapphirePickaxe;
 import com.mralexan.sapphiremod.items.SapphireShovel;
 import com.mralexan.sapphiremod.items.SapphireSword;
-import com.mralexan.sapphiremod.registers.BlocksRegister;
-import com.mralexan.sapphiremod.registers.GameRegister;
-import com.mralexan.sapphiremod.registers.ItemsRegister;
-import com.mralexan.sapphiremod.registers.RecipesRegister;
+import com.mralexan.sapphiremod.world.SapphireWorld;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -52,16 +49,12 @@ public class Sapphire
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
-    	proxy.preInit(event);
     	System.out.println("[SAPPHIREMOD] Side : " + event.getSide().toString());
     	/////////////////////////////////////
     	// Block and items initializations //
     	/////////////////////////////////////
-    	SapphireInitializers.initialize();  
+    	SapphireMainRegister.register();
     	
-		///////////////////
-		// Game registry //
-		///////////////////
-		GameRegister.register();
+    	proxy.preInit(event);
     }
 }

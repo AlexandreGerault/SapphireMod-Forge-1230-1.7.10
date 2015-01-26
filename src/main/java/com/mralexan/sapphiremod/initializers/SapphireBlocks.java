@@ -4,6 +4,7 @@ import com.mralexan.sapphiremod.Sapphire;
 import com.mralexan.sapphiremod.blocks.SapphireBlock;
 import com.mralexan.sapphiremod.blocks.SapphireOre;
 
+import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.ItemStack;
@@ -19,5 +20,13 @@ public class SapphireBlocks
 	{
 		sapphireBlock = new SapphireBlock(Material.rock, "sapphireBlock", 1.5F);
 		sapphireOre = new SapphireOre(Material.rock, "sapphireOre", 1.5F);
+	}
+	
+	public static void registerBlocks()
+	{
+		initializeBlocks();
+		
+    	GameRegistry.registerBlock(SapphireBlocks.sapphireBlock, "sapphireBlock");
+    	GameRegistry.registerBlock(SapphireBlocks.sapphireOre, "sapphireOre");
 	}
 }

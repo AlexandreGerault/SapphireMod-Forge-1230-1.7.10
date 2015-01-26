@@ -1,4 +1,4 @@
-package com.mralexan.sapphiremod.generators;
+package com.mralexan.sapphiremod.world;
 
 import java.util.Random;
 
@@ -36,7 +36,8 @@ public class SapphireWorldGenerator implements IWorldGenerator
         	int sapphireOreYCoord = rand.nextInt(30);
         	int sapphireOreZCoord = chunkZ + rand.nextInt(16);
         	
-        	(new WorldGenMinable(SapphireBlocks.sapphireOre, 4)).generate(world, rand, sapphireOreXCoord, sapphireOreYCoord, sapphireOreZCoord);
+        	int nbOfBlocks = 1 + rand.nextInt(8 - 1);
+        	(new WorldGenMinable(SapphireBlocks.sapphireOre, nbOfBlocks)).generate(world, rand, sapphireOreXCoord, sapphireOreYCoord, sapphireOreZCoord);
         }
 	}
 

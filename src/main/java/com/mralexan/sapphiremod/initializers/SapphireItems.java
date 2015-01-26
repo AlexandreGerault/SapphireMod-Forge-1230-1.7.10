@@ -10,8 +10,11 @@ import com.mralexan.sapphiremod.items.SapphireAxe;
 import com.mralexan.sapphiremod.items.SapphireHoe;
 import com.mralexan.sapphiremod.items.SapphireItem;
 import com.mralexan.sapphiremod.items.SapphirePickaxe;
+import com.mralexan.sapphiremod.items.SapphireSceptre;
 import com.mralexan.sapphiremod.items.SapphireShovel;
 import com.mralexan.sapphiremod.items.SapphireSword;
+
+import cpw.mods.fml.common.registry.GameRegistry;
 
 public class SapphireItems
 {
@@ -22,6 +25,8 @@ public class SapphireItems
     public static Item sapphirePickaxe;
     public static Item sapphireShovel;
     public static Item sapphireHoe;
+    
+    public static Item sapphireSceptre;
     
     public static Item helmetSapphire;
     public static Item chestplateSapphire;
@@ -37,11 +42,33 @@ public class SapphireItems
 		sapphireShovel = new SapphireShovel("sapphireShovel", Sapphire.SAPPHIRE);
 		sapphireHoe = new SapphireHoe("sapphireHoe", Sapphire.SAPPHIRE);
 		
+		sapphireSceptre = new SapphireSceptre("sapphireSceptre");
+		
 		helmetSapphire = new SapphireArmor(Sapphire.ARMORSAPPHIRE, 5, 0, "helmetSapphire");
 		chestplateSapphire = new SapphireArmor(Sapphire.ARMORSAPPHIRE, 5, 1, "chestplateSapphire");
 		legsSapphire = new SapphireArmor(Sapphire.ARMORSAPPHIRE, 5, 2, "legsSapphire");
 		bootsSapphire = new SapphireArmor(Sapphire.ARMORSAPPHIRE, 5, 3, "bootsSapphire");
 		
 		OreDictionary.registerOre("sapphireItem", sapphireItem);
+	}
+	
+	public static void registerItems()
+	{
+		initializeItems();
+		
+    	GameRegistry.registerItem(SapphireItems.sapphireItem, "sapphireItem");
+    	GameRegistry.registerItem(SapphireItems.sapphireSceptre, "sapphireSceptre");
+    	
+    	// Sapphire Tools
+    	GameRegistry.registerItem(SapphireItems.sapphireSword, "sapphireSword");
+    	GameRegistry.registerItem(SapphireItems.sapphireAxe, "sapphireAxe");
+    	GameRegistry.registerItem(SapphireItems.sapphirePickaxe, "sapphirePickaxe");
+    	GameRegistry.registerItem(SapphireItems.sapphireShovel, "sapphireShovel");
+    	GameRegistry.registerItem(SapphireItems.sapphireHoe, "sapphireHoe");
+    	// Sapphire armor
+    	GameRegistry.registerItem(SapphireItems.helmetSapphire, "helmetSapphire");
+    	GameRegistry.registerItem(SapphireItems.chestplateSapphire, "chestplateSapphire");
+    	GameRegistry.registerItem(SapphireItems.legsSapphire, "legsSapphire");
+    	GameRegistry.registerItem(SapphireItems.bootsSapphire, "bootsSapphire");
 	}
 }

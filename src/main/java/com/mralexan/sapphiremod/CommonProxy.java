@@ -1,8 +1,6 @@
 package com.mralexan.sapphiremod;
 
-import com.mralexan.sapphiremod.generators.SapphireWorldGenerator;
-import com.mralexan.sapphiremod.initializers.SapphireInitializers;
-import com.mralexan.sapphiremod.registers.GameRegister;
+import com.mralexan.sapphiremod.world.SapphireWorldGenerator;
 
 import cpw.mods.fml.client.registry.RenderingRegistry;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
