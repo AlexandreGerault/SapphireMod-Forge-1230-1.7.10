@@ -74,7 +74,7 @@ public class SapphireSceptreEventHandler
 			EntityPlayer target = (EntityPlayer) e.target;
 			
 			//If the player has a sapphire scepter in his hand and interact with another player, it heals the target player
-			if(player.getHeldItem().getItem() != null && player.getHeldItem().getItem() instanceof SapphireSceptre)
+			if(player.getHeldItem() != null && player.getHeldItem().getItem() instanceof SapphireSceptre)
 			{
 				target.heal(2);
 			}
