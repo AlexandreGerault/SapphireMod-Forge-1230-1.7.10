@@ -3,6 +3,7 @@ package com.mralexan.sapphiremod;
 import com.mralexan.sapphiremod.blocks.SapphireBlock;
 import com.mralexan.sapphiremod.blocks.SapphireOre;
 import com.mralexan.sapphiremod.events.SapphireEventHandler;
+import com.mralexan.sapphiremod.events.SapphireSceptreEventHandler;
 import com.mralexan.sapphiremod.initializers.SapphireBlocks;
 import com.mralexan.sapphiremod.initializers.SapphireItems;
 import com.mralexan.sapphiremod.initializers.SapphireMainRegister;
@@ -46,6 +47,7 @@ public class Sapphire
     public static CommonProxy proxy;
     
     public static SapphireEventHandler events = new SapphireEventHandler();
+    public static SapphireSceptreEventHandler sapSceptreEvents = new SapphireSceptreEventHandler();
     //Sapphire materials :
     public static ToolMaterial SAPPHIRE = EnumHelper.addToolMaterial("SAPPHIRE", 4, 2000, 200.0F, 2.5F, 100);
     public static ArmorMaterial ARMORSAPPHIRE = EnumHelper.addArmorMaterial("ARMORSAPPHIRE", 20, new int[]{20,20,20,20}, 100);
@@ -55,6 +57,10 @@ public class Sapphire
     {
     	MinecraftForge.EVENT_BUS.register(events);
     	FMLCommonHandler.instance().bus().register(events);
+    	
+    	MinecraftForge.EVENT_BUS.register(sapSceptreEvents);
+    	FMLCommonHandler.instance().bus().register(sapSceptreEvents);
+    	
     	System.out.println("[SAPPHIREMOD] Side : " + event.getSide().toString());
     	/////////////////////////////////////
     	// Block and items initializations //

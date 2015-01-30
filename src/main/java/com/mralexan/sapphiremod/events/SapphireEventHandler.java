@@ -40,45 +40,4 @@ public class SapphireEventHandler
 		System.out.println(event.player.getDisplayName() + " just joined the game !");
 	}
 	
-	@SubscribeEvent
-	public void playerAttackMob(AttackEntityEvent event)
-	{	
-		if(event.entityPlayer.getHeldItem() != null && event.entityPlayer.getHeldItem().getItem() instanceof SapphireSceptre)
-		{
-			System.out.println("Test - Sapphire sceptre in hand!");
-			EntityLivingBase target = null;
-			
-			if(event.target instanceof EntityLiving)
-			{
-				target = (EntityLivingBase) event.target;
-			}
-			
-			
-			if(event.target instanceof IMob)
-			{
-				System.out.println("Hit a munter with sapphire sceptre");
-				event.entityPlayer.setHealth(event.entityPlayer.getHealth() + 2);
-				target.addPotionEffect(new PotionEffect(Potion.wither.id, 1200));
-			}
-			else if(event.target instanceof IAnimals)
-			{
-				System.out.println("Hit an animal with sapphire sceptre");
-				if(event.entityPlayer.getFoodStats().getFoodLevel() == 20)
-				{
-					event.entityPlayer.addPotionEffect(new PotionEffect(Potion.field_76443_y.getId(), 0));
-				}
-				else if(event.entityPlayer.getFoodStats().getFoodLevel() < 20)
-				{
-					event.entityPlayer.addPotionEffect(new PotionEffect(Potion.field_76443_y.getId(), 20));
-				}
-			}
-			
-			else if(event.target instanceof EntityPlayer)
-			{
-				System.out.println("Hit a player with sapphire sceptre");
-				((EntityPlayer) event.target).setHealth(target.getHealth() + 6);
-			}
-			
-		}
-	}
 }
